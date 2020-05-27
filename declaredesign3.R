@@ -153,6 +153,8 @@ redesign_brc <- redesign(design_brc, n_clust = seq(20, 100, 20))
 diagnosis_naive <- diagnose_design(redesign_naive, diagnosands = diagnosands, sims = 500)
 diagnosis_brc <- diagnose_design(redesign_brc, diagnosands = diagnosands, sims = 500)
 
+# Saving results because it takes a few mins to run,
+# can load them below
 #save.image(file = "lab_workspace.Rdata")
 
 # Load & plot results -----------------------------------------------------------------------
